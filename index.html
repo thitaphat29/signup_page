@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page Example</title>
+	<meta charset="utf-8" name="description" content="Signup Page">
+
+  	<!-- reset -->
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="logo.png">
+	</header>
+	
+	<section class="panel">
+		<form class="signup-form" method="post" action="/signup/">
+			<h1>Sign up</h1>
+
+			<fieldset name="signup">
+				<label for="email">Email</label>
+        		<input placeholder='foo@bar.com' type="email" name='email' id='email' required="" />
+
+        		<label for="password">Password</label>
+        		<input placeholder='1234passw0rd' type="password" name='password' id='password' required="" />
+
+        		<button type='submit'>Sign up</button>
+        		<a class="forget-password" href="/forgot-password/new">Forgot password?</a>
+			</fieldset>
+		</form>
+	</section>
+	<p>
+		Already have an account?
+		<a class="login" href="/login">Log in</a>
+	</p>
+</body>
+
